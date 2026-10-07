@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>First State Supply | Simpson Strong-Tie, Fasteners & Contractor Supplies</title>
-<meta name="description" content="First State Supply handles your contracting supply needs, with a focus on Simpson Strong-Tie connectors, fasteners, and job-site materials.">
+<meta name="description" content="First State Supply handles your contracting supply needs, based in Wyoming, DE, specializing in Simpson Strong-Tie connectors, fasteners, and job-site materials.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231E2023'/><text x='50' y='68' font-size='54' font-family='Arial' font-weight='bold' fill='%23A9AFB5' text-anchor='middle'>FS</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,7 +68,10 @@ h2{font:700 clamp(1.8rem,3.4vw,2.4rem)/1.15 var(--head);margin:0 0 .8rem;color:v
 .contact{background:var(--char);color:#fff;text-align:left}
 .contact h2{color:#fff}
 .contact p{color:#C3C8CD;max-width:34rem;margin:0 0 1.6rem}
-.mail{font:600 clamp(1.3rem,3.2vw,2rem) var(--head);color:var(--amber);text-underline-offset:6px;word-break:break-all}
+.contact-methods{display:flex;flex-wrap:wrap;gap:2rem;align-items:center;margin-top:1.5rem}
+.mail, .phone{font:600 clamp(1.2rem,2.5vw,1.8rem) var(--head);color:var(--amber);text-underline-offset:6px;word-break:break-all}
+.hours-badge{background:var(--char-2);border:1px solid var(--steel);padding:1rem 1.5rem;color:#fff;margin-bottom:2rem;display:inline-block}
+.hours-badge strong{color:var(--amber)}
 
 footer{background:#141618;color:#8E959C;font-size:.85rem;padding:1.6rem 0}
 footer .wrap{display:flex;flex-wrap:wrap;gap:.6rem 2rem;justify-content:space-between}
@@ -107,14 +110,13 @@ footer p{margin:0;max-width:44rem}
       <p class="stack steel" aria-label="First State Supply"><span>First</span><span>State</span><span>Supply</span></p>
       <div class="hero-copy">
         <h1>Connectors, fasteners, and the rest of your materials list.</h1>
-        <p>We're a small, locally run Delaware supplier handling your contracting needs, with a focus on Simpson Strong-Tie products. Send us your list and you'll deal directly with us, not a call center.</p>
+        <p>Based in Wyoming, DE, we handle your contracting supply needs with a specialization in Simpson Strong-Tie products alongside many other lines. Send us your list and deal directly with us, not a call center.</p>
         <a class="btn solid" href="mailto:firststatesupply@outlook.com?subject=Quote%20request">Request a quote</a>
         <a class="btn ghost" href="#carry">See what we carry</a>
       </div>
     </div>
   </div>
 
-  <!-- EDIT: adjust these lists to match your real inventory -->
   <section id="carry">
     <div class="wrap">
       <h2>What we carry</h2>
@@ -122,7 +124,7 @@ footer p{margin:0;max-width:44rem}
       <div class="cats">
         <div class="cat main">
           <h3>Simpson Strong-Tie</h3>
-          <p>Our main focus. Engineered connectors for code-compliant structural work.</p>
+          <p>One of our primary specialties. Engineered connectors for code-compliant structural work.</p>
           <ul>
             <li>Joist hangers and framing connectors</li>
             <li>Hurricane and seismic ties</li>
@@ -158,17 +160,17 @@ footer p{margin:0;max-width:44rem}
       <h2>Built for contractors</h2>
       <p class="lead">You're on a schedule. We keep ordering simple and the answers quick.</p>
       <div class="why">
-        <div><h3>Fast, clear quotes</h3><p>Email your list and get an itemized quote back, usually within one business day.</p></div>
         <div><h3>Job and bulk pricing</h3><p>Ask about pricing for full jobs and repeat orders.</p></div>
         <div><h3>One place to order</h3><p>Connectors, fasteners, and the odds and ends, all on one quote and one invoice.</p></div>
+        <div><h3>Direct communication</h3><p>No phone trees or call centers. Deal directly with your supplier.</p></div>
       </div>
     </div>
   </section>
 
   <section id="about">
     <div class="wrap">
-      <h2>A small, local business</h2>
-      <p class="lead">First State Supply is independently owned and based in Delaware. We're not a big-box chain, and that's the point: when you email us, you get a straight answer from the people who will fill your order.</p>
+      <h2>About First State Supply</h2>
+      <p class="lead">Based in Wyoming, DE, First State Supply is a family-run business focused on helping people get the job done right. Founded in December 2025 by Evan Gebhart through a family effort to get the company off the ground, we have continued to grow since day one and look forward to serving local contractors for many years to come.</p>
     </div>
   </section>
 
@@ -176,15 +178,29 @@ footer p{margin:0;max-width:44rem}
     <div class="wrap">
       <h2>Send us your list</h2>
       <p>Include quantities and a job location if you have them, and we'll reply with a quote.</p>
-      <a class="mail" href="mailto:firststatesupply@outlook.com?subject=Quote%20request">firststatesupply@outlook.com</a>
+      
+      <div class="hours-badge">
+        Hours of Operation: <strong>7:00 AM – 5:00 PM Daily</strong>
+      </div>
+
+      <div class="contact-methods">
+        <div>
+          <p style="margin:0 0 0.4rem; font-size:0.9rem; color:#C3C8CD;">Email Us</p>
+          <a class="mail" href="mailto:firststatesupply@outlook.com?subject=Quote%20request">firststatesupply@outlook.com</a>
+        </div>
+        <div style="margin-left: 2rem;">
+          <p style="margin:0 0 0.4rem; font-size:0.9rem; color:#C3C8CD;">Call or Text</p>
+          <a class="phone" href="tel:3027476917">302-747-6917</a>
+        </div>
+      </div>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span>&copy; <span id="yr">2026</span> First State Supply. Delaware.</span>
-    <p>Simpson Strong-Tie is a registered trademark of Simpson Manufacturing Co., Inc. Product names are used for identification only. First State Supply is a small, independently owned local business.</p>
+    <span>&copy; <span id="yr">2026</span> First State Supply. Wyoming, Delaware.</span>
+    <p>Simpson Strong-Tie is a registered trademark of Simpson Manufacturing Co., Inc. Product names are used for identification only. First State Supply is a family-run local business[cite: 9].</p>
   </div>
 </footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
