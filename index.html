@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>First State Supply | Simpson Strong-Tie, Fasteners & Contractor Supplies</title>
+<meta name="description" content="First State Supply handles your contracting supply needs, with a focus on Simpson Strong-Tie connectors, fasteners, and job-site materials.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231E2023'/><text x='50' y='68' font-size='54' font-family='Arial' font-weight='bold' fill='%23A9AFB5' text-anchor='middle'>FS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@600;700&family=Michroma&display=swap" rel="stylesheet">
+<style>
+:root{
+  --char:#1E2023; --char-2:#2A2D31; --steel:#8E959C; --steel-lt:#C9CED3;
+  --amber:#E3A72F; --bg:#EEF0F1; --ink:#1B1D20; --muted:#565C63; --line:#D3D7DA;
+  --head:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;
+  --body:'Barlow',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --logo:'Michroma','Eurostile','Arial Black',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:400 1.0625rem/1.65 var(--body);color:var(--ink);background:var(--bg)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:70rem;margin:0 auto;padding:0 1.5rem}
+
+.steel{background:linear-gradient(180deg,#D5D9DD 0%,#8A9198 52%,#B4BAC0 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+header{background:var(--char);border-bottom:1px solid #3A3E43}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:1rem;padding-bottom:1rem}
+.brand{font:400 1rem/1 var(--logo);letter-spacing:.04em;text-decoration:none;text-transform:uppercase}
+nav{display:flex;gap:1.6rem;font-size:.98rem;color:var(--steel-lt)}
+nav a{text-decoration:none}
+nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:6px}
+
+.hero{background:var(--char);color:#fff}
+.hero .wrap{display:grid;grid-template-columns:auto 1fr;gap:4rem;align-items:center;padding-top:5rem;padding-bottom:5.5rem}
+.stack{font:400 clamp(2.6rem,6.2vw,4.6rem)/1.08 var(--logo);text-transform:uppercase;letter-spacing:.02em;margin:0}
+.stack span{display:block}
+.hero-copy{border-left:3px solid var(--amber);padding-left:2rem;max-width:32rem}
+.hero-copy h1{font:700 clamp(1.7rem,3vw,2.3rem)/1.15 var(--head);margin:0 0 1rem}
+.hero-copy p{margin:0 0 1.8rem;color:#C3C8CD}
+.btn{display:inline-block;padding:.85rem 1.5rem;font:600 1rem var(--body);text-decoration:none;border:2px solid var(--amber);transition:background .15s,color .15s}
+.btn.solid{background:var(--amber);color:var(--char)}
+.btn.solid:hover{background:#fff;border-color:#fff}
+.btn.ghost{color:#fff;border-color:var(--steel);margin-left:.6rem}
+.btn.ghost:hover{background:var(--char-2)}
+
+section{padding:4.5rem 0}
+h2{font:700 clamp(1.8rem,3.4vw,2.4rem)/1.15 var(--head);margin:0 0 .8rem;color:var(--char)}
+.lead{color:var(--muted);max-width:40rem;margin:0 0 2.5rem}
+
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1.5rem}
+.cat{background:#fff;border:1px solid var(--line);border-top:4px solid var(--steel);padding:1.8rem 1.6rem 1.9rem}
+.cat.main{border-top-color:var(--amber)}
+.cat h3{font:700 1.4rem var(--head);margin:0 0 .6rem;color:var(--char)}
+.cat p{margin:0 0 1rem;color:var(--muted);font-size:1rem}
+.cat ul{margin:0;padding:0;list-style:none;font-size:.98rem}
+.cat li{padding:.4rem 0;border-top:1px solid var(--line)}
+
+.dark{background:var(--char-2);color:#fff}
+.dark h2{color:#fff}
+.dark .lead{color:#B9BEC4}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2.5rem}
+.why h3{font:700 1.25rem var(--head);margin:0 0 .4rem;color:var(--steel-lt)}
+.why p{margin:0;color:#B9BEC4}
+
+.contact{background:var(--char);color:#fff;text-align:left}
+.contact h2{color:#fff}
+.contact p{color:#C3C8CD;max-width:34rem;margin:0 0 1.6rem}
+.mail{font:600 clamp(1.3rem,3.2vw,2rem) var(--head);color:var(--amber);text-underline-offset:6px;word-break:break-all}
+
+footer{background:#141618;color:#8E959C;font-size:.85rem;padding:1.6rem 0}
+footer .wrap{display:flex;flex-wrap:wrap;gap:.6rem 2rem;justify-content:space-between}
+footer p{margin:0;max-width:44rem}
+
+@media(max-width:52rem){
+  .hero .wrap{grid-template-columns:1fr;gap:2.5rem;padding-top:3.5rem;padding-bottom:4rem}
+}
+@media(max-width:40rem){
+  nav{gap:1rem;font-size:.9rem}
+  .brand{font-size:.8rem}
+  .btn.ghost{margin:.8rem 0 0}
+  section{padding:3.5rem 0}
+  .hero-copy{padding-left:1.2rem}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand steel" href="#top">First State Supply</a>
+    <nav aria-label="Main">
+      <a href="#carry">What we carry</a>
+      <a href="#why">Why us</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <p class="stack steel" aria-label="First State Supply"><span>First</span><span>State</span><span>Supply</span></p>
+      <div class="hero-copy">
+        <h1>Connectors, fasteners, and the rest of your materials list.</h1>
+        <p>We're a small, locally run Delaware supplier handling your contracting needs, with a focus on Simpson Strong-Tie products. Send us your list and you'll deal directly with us, not a call center.</p>
+        <a class="btn solid" href="mailto:firststatesupply@outlook.com?subject=Quote%20request">Request a quote</a>
+        <a class="btn ghost" href="#carry">See what we carry</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDIT: adjust these lists to match your real inventory -->
+  <section id="carry">
+    <div class="wrap">
+      <h2>What we carry</h2>
+      <p class="lead">Structural hardware for framing, decks, and foundations, plus whatever else is on the job's list.</p>
+      <div class="cats">
+        <div class="cat main">
+          <h3>Simpson Strong-Tie</h3>
+          <p>Our main focus. Engineered connectors for code-compliant structural work.</p>
+          <ul>
+            <li>Joist hangers and framing connectors</li>
+            <li>Hurricane and seismic ties</li>
+            <li>Post bases, caps, and column bases</li>
+            <li>Hold-downs and straps</li>
+          </ul>
+        </div>
+        <div class="cat">
+          <h3>Fasteners</h3>
+          <p>The screws, nails, and anchors to go with the connectors.</p>
+          <ul>
+            <li>Structural screws</li>
+            <li>Nails for framing and connectors</li>
+            <li>Bolts, anchors, and adhesives</li>
+            <li>Bulk boxes and job quantities</li>
+          </ul>
+        </div>
+        <div class="cat">
+          <h3>Everything else</h3>
+          <p>If it's on your list and we don't stock it, we'll source it.</p>
+          <ul>
+            <li>Tools and accessories</li>
+            <li>Job-site supplies</li>
+            <li>Special orders on request</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="why">
+    <div class="wrap">
+      <h2>Built for contractors</h2>
+      <p class="lead">You're on a schedule. We keep ordering simple and the answers quick.</p>
+      <div class="why">
+        <div><h3>Fast, clear quotes</h3><p>Email your list and get an itemized quote back, usually within one business day.</p></div>
+        <div><h3>Job and bulk pricing</h3><p>Ask about pricing for full jobs and repeat orders.</p></div>
+        <div><h3>One place to order</h3><p>Connectors, fasteners, and the odds and ends, all on one quote and one invoice.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>A small, local business</h2>
+      <p class="lead">First State Supply is independently owned and based in Delaware. We're not a big-box chain, and that's the point: when you email us, you get a straight answer from the people who will fill your order.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Send us your list</h2>
+      <p>Include quantities and a job location if you have them, and we'll reply with a quote.</p>
+      <a class="mail" href="mailto:firststatesupply@outlook.com?subject=Quote%20request">firststatesupply@outlook.com</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr">2026</span> First State Supply. Delaware.</span>
+    <p>Simpson Strong-Tie is a registered trademark of Simpson Manufacturing Co., Inc. Product names are used for identification only. First State Supply is a small, independently owned local business.</p>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+</html>
