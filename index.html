@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>First State Supply | Contractor Efficiency, Materials & Custom Apparel</title>
-<meta name="description" content="First State Supply streamlines your contracting needs in Wyoming, DE. From job-site materials and equipment to custom apparel and branded gear, we keep your business running smoothly.">
+<meta name="description" content="First State Supply streamlines your contracting needs in Wyoming, DE. From job-site materials and fasteners to custom apparel and branded gear, we keep your business running smoothly.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231E2023'/><text x='50' y='68' font-size='54' font-family='Arial' font-weight='bold' fill='%23A9AFB5' text-anchor='middle'>FS</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,34 +34,36 @@ nav a{text-decoration:none}
 nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:6px}
 
 .hero{background:var(--char);color:#fff}
-.hero .wrap{display:grid;grid-template-columns:auto 1fr;gap:4rem;align-items:center;padding-top:5rem;padding-bottom:5.5rem}
-.stack{font:400 clamp(2.6rem,6.2vw,4.6rem)/1.08 var(--logo);text-transform:uppercase;letter-spacing:.02em;margin:0}
-.stack span{display:block}
-.hero-copy{border-left:3px solid var(--amber);padding-left:2rem;max-width:34rem}
-.hero-copy h1{font:700 clamp(1.7rem,3vw,2.3rem)/1.15 var(--head);margin:0 0 1rem}
-.hero-copy p{margin:0 0 1.8rem;color:#C3C8CD}
+.hero .wrap{padding-top:5rem;padding-bottom:5.5rem}
+.hero-content{max-width:54rem}
+.hero-title{font:400 clamp(2rem,4.8vw,3.8rem)/1.1 var(--logo);text-transform:uppercase;letter-spacing:.02em;margin:0 0 2rem}
+.hero-body{border-left:3px solid var(--amber);padding-left:2rem;max-width:44rem}
+.hero-body h1{font:700 clamp(1.5rem,2.6vw,2.1rem)/1.15 var(--head);margin:0 0 1rem}
+.hero-body p{margin:0 0 2rem;color:#C3C8CD}
+.hero-actions{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
 .btn{display:inline-block;padding:.85rem 1.5rem;font:600 1rem var(--body);text-decoration:none;border:2px solid var(--amber);transition:background .15s,color .15s}
 .btn.solid{background:var(--amber);color:var(--char)}
 .btn.solid:hover{background:#fff;border-color:#fff}
-.btn.ghost{color:#fff;border-color:var(--steel);margin-left:.6rem}
+.btn.ghost{color:#fff;border-color:var(--steel)}
 .btn.ghost:hover{background:var(--char-2)}
 
 section{padding:4.5rem 0}
 h2{font:700 clamp(1.8rem,3.4vw,2.4rem)/1.15 var(--head);margin:0 0 .8rem;color:var(--char)}
 .lead{color:var(--muted);max-width:44rem;margin:0 0 2.5rem}
 
-.process-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1.5rem}
-.process-card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--steel);padding:1.8rem 1.6rem 1.9rem}
-.process-card.main{border-top-color:var(--amber)}
-.process-card h3{font:700 1.4rem var(--head);margin:0 0 .6rem;color:var(--char)}
-.process-card p{margin:0;color:var(--muted);font-size:1rem}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1.5rem}
+.card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--steel);padding:1.8rem 1.6rem 1.9rem}
+.card.main{border-top-color:var(--amber)}
+.card h3{font:700 1.4rem var(--head);margin:0 0 .6rem;color:var(--char)}
+.card p{margin:0;color:var(--muted);font-size:1rem}
 
 .dark{background:var(--char-2);color:#fff}
 .dark h2{color:#fff}
 .dark .lead{color:#B9BEC4}
-.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2.5rem}
-.why h3{font:700 1.25rem var(--head);margin:0 0 .4rem;color:var(--steel-lt)}
-.why p{margin:0;color:#B9BEC4}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1.5rem}
+.why-card{background:#1E2023;border:1px solid #3A3E43;border-top:4px solid var(--amber);padding:1.8rem 1.6rem 1.9rem}
+.why-card h3{font:700 1.25rem var(--head);margin:0 0 .4rem;color:#fff}
+.why-card p{margin:0;color:#C3C8CD}
 
 .contact{background:var(--char);color:#fff;text-align:left}
 .contact h2{color:#fff}
@@ -75,15 +77,11 @@ footer{background:#141618;color:#8E959C;font-size:.85rem;padding:1.6rem 0}
 footer .wrap{display:flex;flex-wrap:wrap;gap:.6rem 2rem;justify-content:space-between}
 footer p{margin:0;max-width:44rem}
 
-@media(max-width:52rem){
-  .hero .wrap{grid-template-columns:1fr;gap:2.5rem;padding-top:3.5rem;padding-bottom:4rem}
-}
 @media(max-width:40rem){
   nav{gap:1rem;font-size:.9rem}
   .brand{font-size:.8rem}
-  .btn.ghost{margin:.8rem 0 0}
   section{padding:3.5rem 0}
-  .hero-copy{padding-left:1.2rem}
+  .hero-body{padding-left:1.2rem}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
@@ -95,7 +93,8 @@ footer p{margin:0;max-width:44rem}
     <a class="brand steel" href="#top">First State Supply</a>
     <nav aria-label="Main">
       <a href="#efficiency">How It Works</a>
-      <a href="#merchandise">Merchandise & Apparel</a>
+      <a href="#materials">Materials & Fasteners</a>
+      <a href="#merchandise">Apparel & Gear</a>
       <a href="#why">Why Us</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -106,12 +105,16 @@ footer p{margin:0;max-width:44rem}
 <main id="top">
   <div class="hero">
     <div class="wrap">
-      <p class="stack steel" aria-label="First State Supply"><span>First</span><span>State</span><span>Supply</span></p>
-      <div class="hero-copy">
-        <h1>Focus on the build. Let us handle the rest.</h1>
-        <p>Our goal is making your business more efficient so you can spend your time completing the job rather than worrying about material selection, deliveries, delays, or billing. From job-site materials to custom apparel, we keep your business running smoothly.</p>
-        <a class="btn solid" href="mailto:firststatesupply@outlook.com?subject=Material%20or%20Merchandise%20Request">Send us your list</a>
-        <a class="btn ghost" href="#efficiency">Learn more</a>
+      <div class="hero-content">
+        <h1 class="hero-title steel">First State Supply</h1>
+        <div class="hero-body">
+          <h1>Focus on the build. Let us handle the rest.</h1>
+          <p>Our goal is making your business more efficient so you can spend your time completing the job rather than worrying about material selection, deliveries, delays, or billing. From fasteners and job-site materials to custom apparel, we keep your business running smoothly.</p>
+          <div class="hero-actions">
+            <a class="btn solid" href="mailto:firststatesupply@outlook.com?subject=Quote%20Request">Request a quote</a>
+            <a class="btn ghost" href="#materials">Products we offer</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -120,18 +123,39 @@ footer p{margin:0;max-width:44rem}
     <div class="wrap">
       <h2>Designed for maximum efficiency</h2>
       <p class="lead">All you have to do is contact us, send over your list, and pay upon delivery. What will you do with the extra time?</p>
-      <div class="process-grid">
-        <div class="process-card main">
+      <div class="grid-3">
+        <div class="card main">
           <h3>1. Send Your List</h3>
           <p>Text or email your material list, required quantities, job location, or custom apparel requests. If you need it, we source it.</p>
         </div>
-        <div class="process-card">
+        <div class="card">
           <h3>2. We Handle Delivery</h3>
           <p>We take care of tracking, logistics, and timely arrival so you avoid job-site delays and supply chain headaches.</p>
         </div>
-        <div class="process-card">
+        <div class="card">
           <h3>3. Pay Upon Delivery</h3>
           <p>Simple terms and straightforward billing. Pay upon delivery with zero complications or runaround.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="materials" style="background:#fff;">
+    <div class="wrap">
+      <h2>Fasteners, hardware & job-site materials</h2>
+      <p class="lead">We supply everything you need to keep framing, decks, and construction projects moving without interruption.</p>
+      <div class="grid-3">
+        <div class="card main">
+          <h3>Fasteners & Anchors</h3>
+          <p>Structural screws, nails, bolts, and anchors supplied in bulk or job-specific quantities.</p>
+        </div>
+        <div class="card">
+          <h3>Connectors & Hardware</h3>
+          <p>Engineered structural connectors and framing hardware for code-compliant structural work.</p>
+        </div>
+        <div class="card">
+          <h3>Job-Site Supplies</h3>
+          <p>Tools, accessories, and special order items. If it's on your list, we source it and deliver it.</p>
         </div>
       </div>
     </div>
@@ -141,14 +165,14 @@ footer p{margin:0;max-width:44rem}
     <div class="wrap">
       <h2>Merchandise and custom apparel</h2>
       <p class="lead">We supply the things to keep your business running smoothly, including custom apparel to help you represent the business you have worked so hard for.</p>
-      <div class="process-grid">
-        <div class="process-card" style="background:#2A2D31; border-color:#3A3E43;">
-          <h3 style="color:#fff;">Job-Site Supplies & Gear</h3>
-          <p style="color:#C3C8CD;">Everything required to keep your crews operating at full speed day in and day out without missing a beat.</p>
+      <div class="grid-3">
+        <div class="card" style="background:#2A2D31; border-color:#3A3E43;">
+          <h3 style="color:#fff;">Job-Site Gear</h3>
+          <p style="color:#C3C8CD;">Equipment and accessories required to keep your crews operating smoothly day in and day out.</p>
         </div>
-        <div class="process-card main" style="background:#2A2D31;">
-          <h3 style="color:#fff;">Branded Apparel</h3>
-          <p style="color:#C3C8CD;">Order custom apparel and gear to showcase your company logo and represent your brand professionally on every job site.</p>
+        <div class="card main" style="background:#2A2D31;">
+          <h3 style="color:#fff;">Custom Apparel</h3>
+          <p style="color:#C3C8CD;">Branded shirts, pullovers, and gear so your team can professionally represent your company on every site.</p>
         </div>
       </div>
     </div>
@@ -158,13 +182,15 @@ footer p{margin:0;max-width:44rem}
     <div class="wrap">
       <h2>Why contractors partner with us</h2>
       <p class="lead">You are on a tight schedule. We keep communication fast, direct, and reliable.</p>
-      <div class="why">
-        <h3>Direct Communication</h3>
-        <p>No phone trees, call centers, or automated loops. Deal directly with your local supplier whenever you need us.</p>
-      </div>
-      <div class="why" style="margin-top:2rem;">
-        <h3>Zero Delays</h3>
-        <p>We work proactively to ensure your materials and gear arrive on schedule so your crew never stands around waiting.</p>
+      <div class="why-grid">
+        <div class="why-card">
+          <h3>Direct Communication</h3>
+          <p>No phone trees, call centers, or automated loops. Deal directly with your local supplier whenever you need us.</p>
+        </div>
+        <div class="why-card">
+          <h3>Zero Delays</h3>
+          <p>We work proactively to ensure your materials and gear arrive on schedule so your crew never stands around waiting.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -188,7 +214,7 @@ footer p{margin:0;max-width:44rem}
       <div class="contact-methods">
         <div>
           <p style="margin:0 0 0.4rem; font-size:0.9rem; color:#C3C8CD;">Email Us Your List</p>
-          <a class="mail" href="mailto:firststatesupply@outlook.com?subject=Material%20or%20Merchandise%20Request">firststatesupply@outlook.com</a>
+          <a class="mail" href="mailto:firststatesupply@outlook.com?subject=Quote%20Request">firststatesupply@outlook.com</a>
         </div>
         <div style="margin-left: 2rem;">
           <p style="margin:0 0 0.4rem; font-size:0.9rem; color:#C3C8CD;">Call or Text</p>
@@ -205,9 +231,6 @@ footer p{margin:0;max-width:44rem}
     <p>First State Supply is a family-run local business dedicated to contractor efficiency and custom branding.</p>
   </div>
 </footer>
-<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
-</body>
-</html>
 <script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
 </body>
 </html>
